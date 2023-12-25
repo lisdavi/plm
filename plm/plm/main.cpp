@@ -4,6 +4,7 @@
 #include "file_reader.h"
 #include "tele_cons.h"
 #include "const.h"
+#include "processing.h"
 #include <string>
 using namespace std;
 
@@ -161,15 +162,11 @@ int main() {
     cout << "Laboratory work #8. GIT\n";
     cout << "Variant #9.telephone conversations\n";
     cout << "Author: Anastasia Nabieva\n";
-
+    cout << "Group: 23Ping1d\n";
     phone_call* call[MAX_FILE_ROWS_COUNT];
 
     int size;
-<<<<<<< HEAD
     try { //÷òåíèå ôàéëà 
-=======
-    try { //Ñ‡Ñ‚ÐµÐ½Ð¸Ðµ Ñ„Ð°Ð¹Ð»Ð° 
->>>>>>> bccea089d03b28eecf52fff9588c51f4a4580466
         read("data.txt", call, size);
         for (int i = 0; i < size; i++) {
             print_stuff(call, i);
@@ -184,19 +181,12 @@ int main() {
     int rpts_value = 0;
     while (rpts == true) {
         cout << "What do you want to do next? " << endl
-<<<<<<< HEAD
             << "1. Âûâîä âñåõ ðàçãîâîðîâ íà ìîáèëüíûõ òåëåôîíàõ " << endl
             << "2. Ðàçãîâîðû çà Íîÿáðü 21 " << endl
             << "3. Ïèðàìèäîé" << endl
             << "4. Áûñòðàÿ ñîðòèðîâêà" << endl
-=======
-            << "1. Ð’Ñ‹Ð²Ð¾Ð´ Ð²ÑÐµÑ… Ñ€Ð°Ð·Ð³Ð¾Ð²Ð¾Ñ€Ð¾Ð² Ð½Ð° Ð¼Ð¾Ð±Ð¸Ð»ÑŒÐ½Ñ‹Ñ… Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½Ð°Ñ… " << endl
-            << "2. Ð Ð°Ð·Ð³Ð¾Ð²Ð¾Ñ€Ñ‹ Ð·Ð° ÐÐ¾ÑÐ±Ñ€ÑŒ 21 " << endl
-            << "3. ÐŸÐ¸Ñ€Ð°Ð¼Ð¸Ð´Ð¾Ð¹" << endl
-            << "4. Ð‘Ñ‹ÑÑ‚Ñ€Ð°Ñ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ°" << endl
->>>>>>> bccea089d03b28eecf52fff9588c51f4a4580466
-            << "5. Exit " << endl;
-
+            << "5. Exit " << endl
+            << "6.Ñðåäíÿÿ ñòîèìîñòü îäíîé ñåêóíäû ðàçãîâîðà" << endl;
         cin >> rpts_value;
         switch (rpts_value)
         {
@@ -215,15 +205,9 @@ int main() {
         case 3:
         {
 
-<<<<<<< HEAD
             cout << "Êðèòåðèè ñîðòèðîâêè" << endl
                 << "1.Ïî óáûâàíèþ ïðîäîëæèòåëüíîñòè ðàçãîâîðà" << endl
                 << "2. Ïî âîçðàñòàíèþ íîìåðà òåëåôîíà, à â ðàìêàõ îäíîãî íîìåðà ïî óáûâàíèþ ñòîèìîñòè ðàçãîâîðà" << endl;
-=======
-            cout << "ÐšÑ€Ð¸Ñ‚ÐµÑ€Ð¸Ð¸ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸" << endl
-                << "1.ÐŸÐ¾ ÑƒÐ±Ñ‹Ð²Ð°Ð½Ð¸ÑŽ Ð¿Ñ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚Ð¸ Ñ€Ð°Ð·Ð³Ð¾Ð²Ð¾Ñ€Ð°" << endl
-                << "2. ÐŸÐ¾ Ð²Ð¾Ð·Ñ€Ð°ÑÑ‚Ð°Ð½Ð¸ÑŽ Ð½Ð¾Ð¼ÐµÑ€Ð° Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½Ð°, Ð° Ð² Ñ€Ð°Ð¼ÐºÐ°Ñ… Ð¾Ð´Ð½Ð¾Ð³Ð¾ Ð½Ð¾Ð¼ÐµÑ€Ð° Ð¿Ð¾ ÑƒÐ±Ñ‹Ð²Ð°Ð½Ð¸ÑŽ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚Ð¸ Ñ€Ð°Ð·Ð³Ð¾Ð²Ð¾Ñ€Ð°" << endl;
->>>>>>> bccea089d03b28eecf52fff9588c51f4a4580466
             cin >> sort_id;
             heapSort(call, size, sort_id);
             for (int i = 0; i < size; i++)
@@ -235,15 +219,9 @@ int main() {
         case 4:
         {
 
-<<<<<<< HEAD
             cout << "Êðèòåðèè ñîðòèðîâêè" << endl
                 << "1.Ïî óáûâàíèþ ïðîäîëæèòåëüíîñòè ðàçãîâîðà" << endl
                 << "2. Ïî âîçðàñòàíèþ íîìåðà òåëåôîíà, à â ðàìêàõ îäíîãî íîìåðà ïî óáûâàíèþ ñòîèìîñòè ðàçãîâîðà" << endl;
-=======
-            cout << "ÐšÑ€Ð¸Ñ‚ÐµÑ€Ð¸Ð¸ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸" << endl
-                << "1.ÐŸÐ¾ ÑƒÐ±Ñ‹Ð²Ð°Ð½Ð¸ÑŽ Ð¿Ñ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚Ð¸ Ñ€Ð°Ð·Ð³Ð¾Ð²Ð¾Ñ€Ð°" << endl
-                << "2. ÐŸÐ¾ Ð²Ð¾Ð·Ñ€Ð°ÑÑ‚Ð°Ð½Ð¸ÑŽ Ð½Ð¾Ð¼ÐµÑ€Ð° Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½Ð°, Ð° Ð² Ñ€Ð°Ð¼ÐºÐ°Ñ… Ð¾Ð´Ð½Ð¾Ð³Ð¾ Ð½Ð¾Ð¼ÐµÑ€Ð° Ð¿Ð¾ ÑƒÐ±Ñ‹Ð²Ð°Ð½Ð¸ÑŽ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚Ð¸ Ñ€Ð°Ð·Ð³Ð¾Ð²Ð¾Ñ€Ð°" << endl;
->>>>>>> bccea089d03b28eecf52fff9588c51f4a4580466
             cin >> sort_id;
             quickSort(call, 0, size - 1, sort_id, size);
             for (int i = 0; i < size; i++)
@@ -257,14 +235,15 @@ int main() {
             rpts = false;
             break;
         }
-
+        case 6:
+        {
+            Cost(call, size);
+            break;
         }
-        for (int i = 0; i < size; i++) {
-            delete call[i];
         }
-        return 0;
-<<<<<<< HEAD
     }
-=======
+    for (int i = 0; i < size; i++) {
+        delete call[i];
     }
->>>>>>> bccea089d03b28eecf52fff9588c51f4a4580466
+    return 0;
+}

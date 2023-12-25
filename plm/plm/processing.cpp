@@ -4,7 +4,6 @@
 using namespace std;
 float Cost(phone_call* subscriptions[], int size)
 {
-
     float Costs = 0;
     float Costssum = 0;
 
